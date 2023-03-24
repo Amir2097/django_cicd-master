@@ -50,12 +50,12 @@ jobs:
       - name: Set mod
         run: pip install -r requirements.txt
 
-      - name: Dep
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ env.SSH_HOST }}
-          username: ${{ env.SSH_NAME }}
-          password: ${{ env.SSH_PASS }}
-          script: expect /home/adminserver/django_cicd/pull.exp
+#       - name: Dep
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ env.SSH_HOST }}
+#           username: ${{ env.SSH_NAME }}
+#           password: ${{ env.SSH_PASS }}
+#           script: expect /home/amir/django_cicd-master/pull.exp
 
 
